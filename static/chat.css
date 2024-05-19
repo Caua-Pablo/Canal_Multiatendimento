@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+.container {
+    border: 1px solid #ccc;
+    width: 1710px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background-color: royalblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .chat {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .message-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .send-button,
+  .voice-button {
+    padding: 8px 12px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover,
+  .voice-button:hover {
+    background-color: black;
+  }
+
+
+#user_avatar {
+width: 50px;
+height: 50px;
+object-fit: cover;
+border-radius: 20px;
+
+}
+
+body{
+
+    min-height: 100vh;
+    display: flex;
+    background-color: aliceblue;
+}
+
+#sidebar {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: aliceblue;
+height: 100vh;
+border-radius: 0px 18px 18px 0px;
+position: relative;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+
+
+#user {
+display: flex;
+align-items: center;
+gap: 8px;   
+margin-bottom: 24px;
+}
+
+
+#user_avatar {
+width: 50px;
+height: 50px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+#user_infos {
+display: flex;
+flex-direction: column;
+}
+
+#user_infos span :last-child {
+color: blue;
+font-size: 12px;
+
+
+
+}
+
+
+#side_items {
+display: flex;
+flex-direction: column;
+gap: 8px;
+list-style: none;
+
+}
+
+.side-item {
+border-radius: 8px;
+padding: 14px;
+cursor: pointer;
+}
+
+.side-item.active {
+    background-color: royalblue;
+}
+
+.side-item:hover:not(.side-item.active)
+#logout_btn:hover{
+    background-color: aliceblue;
+}
+
+.side-item a{
+text-decoration: none;
+display: flex;
+align-items: center;
+color: black;
+justify-content: center;
+}
+
+.side-item.active a {
+    color: aliceblue;
+}
+
+
+.side-item a i {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 20px;
+height: 20px;
+}
+
+
+#logout {
+border-top: 1px solid whitesmoke;
+padding: 12px;
+}
+
+#logout_btn {
+border: none;
+padding: 12px;
+font-size: 14px;
+display: flex;
+gap: 20px;
+align-items: center;
+border-radius: 8px;
+text-align: start;
+cursor: pointer;
+background-color: transparent;
+}
+
+
+#open_btn{
+position: absolute;
+top: 30px;
+right: -10px;
+background-color: blue;
+color: aliceblue;
+border-radius: 100%;
+width: 20px;
+height: 20px;
+border: none;
+cursor: pointer;
+}
+
+#open_btn_voice{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#sidebar.open-sidebar{
+
+    min-width: 15%;
+}
+
+
+
+
+
